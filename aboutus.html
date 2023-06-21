@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="sub-header">
+        <nav>
+            <!--Логотип-->
+            <a href="#"><img src="./images/logo.jpg" alt=""></a>
+
+            <!--Ссылки-->
+            <div class="nav-links" id="NavLinks">
+                <i class="fa-solid fa-xmark-circle" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="index.html">Films</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <h1>ABOUT US</h1>
+    </header>
+
+
+
+    <main>
+        <section class="aboutus">
+            <div class="row">
+                <div class="about-col need">
+                    <h1>Lorem Lorem</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quis aliquid. Nisi, ex iste dolore enim facere perferendis! Ut possimus eligendi, placeat provident earum rerum exercitationem nesciunt aperiam alias! Distinctio?</p>
+                    <a href="" class="btn blue-btn">Explore now!</a>
+                </div>
+                <div class="about-col">
+                    <img src="./images/liu-dakai-20211101.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <h4>This is footer</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sit sunt nostrum voluptatibus placeat! Unde fuga cum nihil sunt quae, ratione voluptas soluta! Corrupti aspernatur nisi eaque cum perspiciatis ut.</p>
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p class="footer-text">Made with <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+    <script>
+        let NavLinks = document.getElementById('NavLinks')
+
+        function ShowMenu(){
+            NavLinks.style.right='0';
+        }
+        function HideMenu(){
+            NavLinks.style.right='-200px';
+        }
+    </script>
+</body>
+</html>

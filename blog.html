@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="sub-header">
+        <nav>
+            <!--Логотип-->
+            <a href="#"><img src="./images/logo.jpg" alt=""></a>
+
+            <!--Ссылки-->
+            <div class="nav-links" id="NavLinks">
+                <i class="fa-solid fa-xmark-circle" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="index.html">Films</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <h1>BLOG</h1>
+    </header>
+
+
+
+    <main>
+        <section class="blog-content">
+            <div class="blog-left">
+                <img src="./images/hansoyoung.jpg" alt="">
+                <h2>Online films</h2>
+                <p>Libero alias esse rerum amet, consequuntur odio nesciunt</p>
+                <br>
+                <p>Libero alias esse rerum amet, consequuntur odio nesciunt</p>
+                <br>
+                <p>Libero alias esse rerum amet, consequuntur odio nesciunt</p>
+                <br>
+                <p>Libero alias esse rerum amet, consequuntur odio nesciunt</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter your email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" class="btn blue-btn">Post comment</button>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+
+                <div>
+                    <span>The Avengers</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>The Avengers</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>The Avengers</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>The Avengers</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>The Avengers</span>
+                    <span>10</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <h4>This is footer</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sit sunt nostrum voluptatibus placeat! Unde fuga cum nihil sunt quae, ratione voluptas soluta! Corrupti aspernatur nisi eaque cum perspiciatis ut.</p>
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p class="footer-text">Made with <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+    <script>
+        let NavLinks = document.getElementById('NavLinks')
+
+        function ShowMenu(){
+            NavLinks.style.right='0';
+        }
+        function HideMenu(){
+            NavLinks.style.right='-200px';
+        }
+    </script>
+</body>
+</html>
